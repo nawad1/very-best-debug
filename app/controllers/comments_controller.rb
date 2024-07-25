@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
     a_new_comment.venue_id = comment_venue_id
     a_new_comment.body = comment_body 
     a_new_comment.save
-    
+
     redirect_to("/venues/#{a_new_comment.venue_id}")
   end
 end
